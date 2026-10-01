@@ -355,6 +355,7 @@ ABOUT PAGE
 
 .governance-grid .card {
   border-radius: var(----card-radius);
+  border-top: 2px solid var(--dark-green);
 }
 /* =======================================
 PROJECTS PAGE
@@ -490,16 +491,35 @@ MEDIA QUERIES
 ================================================ */
 
 @media (max-width: 960px){
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero h1:after {
+  font-size: 18px;
+}
+
+.hero-image {
+   height: 340px;
+}
+
+.borderline {
+  width: 200px;
+}
 
 }
 
-@media (max-width: 670px) {
+@media (max-width: 768px) {
   .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 var(--spacing-lg);
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
   .navbar {
     position: relative;
   }
@@ -534,6 +554,97 @@ MEDIA QUERIES
     display: block;
     padding: 15px 0;
   }
+/* hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    max-width: 80%;
+    margin: 0px auto;
+  }
+
+  .hero-content p {
+    margin: 20px auto;
+  }
+
+  .hero-grid p:last-of-type {
+    padding-bottom: 20px;
+}
+
+  .hero-image {
+   width: 60%;
+   height: 345px;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 170px; 
+}
+
+  .hero-image img {
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+/* feature */
+
+.stat strong {
+    font-size: 2rem;
+}
+
+.borderline {
+  width: 160px;
+}
+/* our work */
+
+.work-left, .work-right {
+  text-align: center;
+}
+
+.work-right {
+    margin-top: 0px;
+}
+
+.work-cards-grid {
+    grid-template-columns: 0.8fr 0.6fr;
+    margin-top: var(--spacing-xl);
+    text-align: left;
+}
+
+.work-cards-grid h3 {
+  margin-bottom: 10px;
+}
+
+.work-card-big p:last-of-type, .work-card-small p:last-of-type {
+  padding: 0 0 10px;
+}
+
+/* cta */
+.cta-section h2{
+  font-size: 2.5rem;
+  
+}
+
+/* ABOUT PAGE */
+
+.about-head {
+  text-align: center;
+}
+
+.about-head h1 {
+  width: 100%;
+  margin: 10px auto;
+
+}
+
+.about-head p{
+  margin: 0 auto;
+}
+
+/* feature */
+.featured-text {
+  margin-top: 20px;
+}
 }
 
 @media (max-width: 500px) {
