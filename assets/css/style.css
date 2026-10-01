@@ -564,16 +564,14 @@ MEDIA QUERIES
   .hero-grid {
     grid-template-columns: 1fr;
     justify-items: center;
-    text-align: center;
   }
 
   .hero h1 {
     max-width: 80%;
-    margin: 0px auto;
   }
 
   .hero-content p {
-    margin: 20px auto;
+    margin: 20px 0;
   }
 
   .hero-grid p:last-of-type {
@@ -633,18 +631,9 @@ MEDIA QUERIES
 
 /* ABOUT PAGE */
 
-.about-head {
-  text-align: center;
-}
-
 .about-head h1 {
-  width: 100%;
-  margin: 15px auto;
+  margin: 15px 0;
 
-}
-
-.about-head p{
-  margin: 0 auto;
 }
 
 /* feature */
@@ -654,17 +643,18 @@ MEDIA QUERIES
 .featured-text {
   margin-top: 20px;
 }
+.featured-text h3 {
+  margin-top: 20px;
+}
 
 .grid.governance  {
     gap: 0px;
 }
 
-/* .featured-text p {
-    margin-top: 20px;
-} */
 
 .featured-text p:first-of-type {
     width: 100%;
+    margin: 20px 0;
 }
 
 .pipeline .featured-text {
@@ -684,24 +674,29 @@ MEDIA QUERIES
   grid-template-columns: 1fr;
 }
 
+.cta-section h2:last-of-type:after {
+    right: 18px;
+    bottom: 38px;
+    font-size: 14px;
+}
   
 
 }
 
 @media (max-width: 375px) {
    .container {
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 0 var(--spacing-sm);
   }
 
   .section-spacing{
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
   }
 
    .hero h1 {
-    margin: 10px auto;
-    font-size: 2.5em;
+    margin: 20px auto;
+    font-size: 2.3em;
+    text-align: left;
+    max-width: 100%;
   }
 
   .hero h1:after {
@@ -719,7 +714,7 @@ MEDIA QUERIES
 
   .hero-image {
    width: 100%;
-   height: 255px;
+   height: 275px;
   border-top-left-radius: 130px;
   border-top-right-radius: 130px; 
  
@@ -785,8 +780,14 @@ h2 {
 }
 
 .cta-section h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-top: 12px;
+}
+
+.cta-section h2:last-of-type:after {
+    right: 11px;
+    bottom: 44px;
+    font-size: 10px;
 }
 
 .footer {
@@ -794,8 +795,8 @@ h2 {
 } 
 
 .footer-grid {
-    grid-template-columns: repeat(0, 1fr);
-    grid-template-rows: repeat(0, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
 }
 
@@ -807,6 +808,7 @@ h2 {
    grid-row: span 2 / span 2;
     grid-row-start: 2;
     margin-bottom: 10px;
+    grid-column: span 3 / span 3;
 }
 
 .footer-grid .company-address {
@@ -834,7 +836,9 @@ h2 {
     }
 
 
-
+.about-head p:last-of-type {
+    padding-top: 0px;
+}
 
 
 }
