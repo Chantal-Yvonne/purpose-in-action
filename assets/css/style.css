@@ -21,7 +21,7 @@ ROOT VARIABLES
     --spacing-3xl: 5rem;    /* 80px */
     --spacing-4xl: 6rem;    /* 96px */
 
-    ----card-radius: 2px;
+    --card-radius: 2px;
 }
 
 /* =============================
@@ -354,7 +354,7 @@ ABOUT PAGE
 }
 
 .governance-grid .card {
-  border-radius: var(----card-radius);
+  border-radius: var(--card-radius);
   border-top: 2px solid var(--dark-green);
 }
 /* =======================================
@@ -396,6 +396,10 @@ PROJECTS PAGE
   margin-top: 20px;
 }
 
+.three-col-grid {
+  margin-top: var(--spacing-2xl);
+}
+
 /* =======================================
 CONTACT PAGE
 ========================================== */
@@ -408,7 +412,7 @@ CONTACT PAGE
 
 .contact-cards .card {
   background-color: var(--white);
-  border-radius: var(----card-radius);
+  border-radius: var(--card-radius);
   padding: var(--spacing-md);
 }
 
@@ -512,10 +516,12 @@ MEDIA QUERIES
 @media (max-width: 768px) {
   .container {
     max-width: 1100px;
-    margin: 0 auto;
     padding: 0 var(--spacing-lg);
   }
 
+  .section-spacing{
+    padding: var(--spacing-xl) 0;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -633,7 +639,7 @@ MEDIA QUERIES
 
 .about-head h1 {
   width: 100%;
-  margin: 10px auto;
+  margin: 15px auto;
 
 }
 
@@ -642,11 +648,193 @@ MEDIA QUERIES
 }
 
 /* feature */
+.featured-top.grid {
+  gap: 0px;
+}
 .featured-text {
   margin-top: 20px;
 }
+
+.grid.governance  {
+    gap: 0px;
 }
 
-@media (max-width: 500px) {
+/* .featured-text p {
+    margin-top: 20px;
+} */
+
+.featured-text p:first-of-type {
+    width: 100%;
+}
+
+.pipeline .featured-text {
+    margin-top: 0px;
+}
+.governance .featured-text {
+    margin-top: 0px;
+    width: 75%;
+}
+
+.governance-grid {
+  margin-top: var(--spacing-xl);
+}
+
+.three-col-grid {
+  margin-top: var(--spacing-xl);
+  grid-template-columns: 1fr;
+}
+
   
+
+}
+
+@media (max-width: 375px) {
+   .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+  }
+
+  .section-spacing{
+    padding: var(--spacing-xl) 0;
+  }
+
+   .hero h1 {
+    margin: 10px auto;
+    font-size: 2.5em;
+  }
+
+  .hero h1:after {
+  font-size: 12px;
+}
+
+.buttons {
+  display: grid;
+  gap: 20px;
+}
+
+.buttons a {
+  margin-right: 0px;
+}
+
+  .hero-image {
+   width: 100%;
+   height: 255px;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px; 
+ 
+}
+
+  .hero-image img {
+  width: 90%;
+  margin: 30px auto 0;
+}
+
+.hero-grid {
+  gap: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.flex {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.borderline {
+  display: none;
+}
+
+.featured .grid {
+ text-align: center;
+}
+
+.featured-top .tagline, .our-work-section .tagline {
+  margin-bottom: var(--spacing-sm);
+}
+
+.stats {
+    margin-top: var(--spacing-xl);
+}
+
+.stat:last-child{
+    text-align: center;
+    width: 100%;
+}
+
+.stat {
+  margin: 10px 0 0;
+}
+
+.our-work-section h2:after , .cta-section h2:after, .cta-section h2:last-of-type:after{
+  font-size: 12px;
+}
+
+.work-cards-grid {
+    grid-template-columns: 1fr;
+    margin-top: var(--spacing-xl);
+    text-align: left;
+}
+
+.work-card-big p, .work-card-small p {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.cta-section h2 {
+  font-size: 1.8em;
+  margin-top: 12px;
+}
+
+.footer {
+    padding: 2.5rem 0 0;
+} 
+
+.footer-grid {
+    grid-template-columns: repeat(0, 1fr);
+    grid-template-rows: repeat(0, 1fr);
+    gap: 10px;
+}
+
+.footer-grid .logo {
+    grid-column: span 3 / span 3;
+}
+
+.footer-grid nav {
+   grid-row: span 2 / span 2;
+    grid-row-start: 2;
+    margin-bottom: 10px;
+}
+
+.footer-grid .company-address {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+  
+
+.footer h2 {
+    margin: 10px 0 10px;
+}
+
+.featured-text p {
+        margin-top: 0px;
+    }
+
+.governance .featured-text {
+    margin-top: 0px;
+    width: 100%;
+}
+
+    .featured-text p:first-of-type {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+
+
+
+
 }
