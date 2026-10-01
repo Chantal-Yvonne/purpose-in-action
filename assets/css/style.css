@@ -840,5 +840,9 @@ h2 {
     padding-top: 0px;
 }
 
+.model-info h2:after, .governance h2:after, .pipeline h2:after {
+    font-size: 12px;
+}
+
 
 }
