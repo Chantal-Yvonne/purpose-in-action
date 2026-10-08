@@ -223,6 +223,10 @@ address {
   gap: 20px;
 }
 
+.main-menu li a:hover {
+  color: var(--lt-green-text);
+}
+
 /* =======================================
 HERO
 ========================================== */
@@ -287,7 +291,7 @@ FEATURE
 /* ======================================
 OUR WORK
 ========================================= */
-.our-work-section .square, .cta-section .square,
+.our-work-section .square,
 .governance .square,
 .pipeline .square  
  {
@@ -385,13 +389,13 @@ CALL TO ACTION
   margin-bottom: 40px;
 }
 
- .cta-section:nth-child(4) .square{
+ /* .cta-section:nth-child(4) .square{
   position: relative;
   right: 22.30px;
   top: 0.1px;
   width: 8.3px;
   height: 8.3px;
- }
+ } */
 /* ======================================
 ABOUT PAGE
 ========================================= */
@@ -776,7 +780,7 @@ MEDIA QUERIES
     right: 0px;
 }
 
-.our-work-section .square, .cta-section .square,
+.our-work-section .square,
 .governance .square,
 .pipeline .square  
  {
@@ -867,17 +871,17 @@ MEDIA QUERIES
     margin-top: 12px;
   }
 
-  .cta-section:nth-child(4) .square {
+  /* .cta-section:nth-child(4) .square {
     right: 1px;
     width: 4px;
     height: 4px;
-}
+} */
 
- .cta-section:nth-child(4) .square-about {
+ /* .cta-section:nth-child(4) .square-about {
     right: 0px;
     width: 4px;
     height: 4px;
-}
+} */
 
   .footer {
     padding: 2.5rem 0 0;
