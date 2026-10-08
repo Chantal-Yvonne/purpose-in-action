@@ -868,7 +868,7 @@ MEDIA QUERIES
   }
 
   .cta-section:nth-child(4) .square {
-    right: 10.95px;
+    right: 1px;
     width: 4px;
     height: 4px;
 }
